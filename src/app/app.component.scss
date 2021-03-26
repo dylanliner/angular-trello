@@ -1,0 +1,10 @@
+.board{
+display: flex;
+justify-content: space-evenly
+}
+
+.task{
+  display: flex;
+  flex-direction:column
+
+  }
