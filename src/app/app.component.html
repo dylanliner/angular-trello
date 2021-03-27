@@ -1,3 +1,8 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="title" required >
+  <input type="text" formControlName="description" required>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
 <div class="board">
   <div>TODO
     <div *ngFor="let toDo of toDos">
